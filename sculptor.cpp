@@ -82,6 +82,17 @@ void Sculptor::cutVoxel(int x, int y, int z) {
   v[x][y][z].isOn = false;
 }
 
+//retorna as dimenções
+int Sculptor::getNx(){
+    return nx;
+}
+int Sculptor::getNy(){
+    return ny;
+}
+int Sculptor::getNz(){
+    return nz;
+}
+
 // cria e escreve no arquivo
 void Sculptor::writeOFF(const char *filename) {
 

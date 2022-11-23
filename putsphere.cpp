@@ -2,23 +2,29 @@
 #include <iostream>
 #include <cmath>
 
-putSphere::putSphere(int xcenter, int ycenter, int zcenter, int radius){
+//associando as variaveis da classe 
+putSphere::putSphere(int xcenter, int ycenter, int zcenter, int radius,float r, float g, float b, float a){
   this->xcenter=xcenter;
   this->ycenter=ycenter;
   this->zcenter=zcenter;
+  this->radius=radius;
+  this->r=r; this->g=g; this->b=b; this->a=a;
 }
+
+//informando que a figura foi destruida
 putSphere::~putSphere(){
   std::cout<<"Sphere destruida!";
 }
 
+//desenhando a figura
 void putSphere:: draw(Sculptor &s){
 
-  
+  //seleciona a cor
   s.setColor(r,g,b,a);
 
-  for (int i = 0; i < nx; i++) {
-    for (int j = 0; j < ny; j++) {
-      for (int k = 0; k < nz; k++) {
+  for (int i = 0; i < s.getNx(); i++) {
+    for (int j = 0; j < s.getNx(); j++) {
+      for (int k = 0; k < s.getNz(); k++) {
         // calcula equação da esfera
         float eq =
             (pow(i - xcenter, 2) + pow(j - ycenter, 2) + pow(k - zcenter, 2));

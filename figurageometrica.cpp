@@ -1,10 +1,7 @@
 #include "figurageometrica.h"
 #include <iostream>
 
-//colocar codigo dos metodos
-
+//informando que a figura foi destruida
 FiguraGeometrica::~FiguraGeometrica(){
-  std::cout << "destrutor figurageometrica\n";
+  std::cout<<"Figura destruida";
 }
-
-
