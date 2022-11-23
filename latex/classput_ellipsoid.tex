@@ -1,0 +1,96 @@
+\hypertarget{classput_ellipsoid}{}\doxysection{put\+Ellipsoid Class Reference}
+\label{classput_ellipsoid}\index{putEllipsoid@{putEllipsoid}}
+
+
+A classe \mbox{\hyperlink{classput_ellipsoid}{put\+Ellipsoid}} serve para esculpir a Elipse.  
+
+
+
+
+{\ttfamily \#include $<$putellipsoid.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classput_ellipsoid_a003409d588d3ce87a044247b156b7125}\label{classput_ellipsoid_a003409d588d3ce87a044247b156b7125}} 
+{\bfseries put\+Ellipsoid} (int \mbox{\hyperlink{classput_ellipsoid_a15a453848be2e6f4efa0135167fabd91}{xcenter}}, int ycenter, int zcenter, int rx, int ry, int rz, float \mbox{\hyperlink{class_figura_geometrica_a4788d82c901b9367dd5c0daff8a7616b}{r}}, float g, float b, float a)
+\begin{DoxyCompactList}\small\item\em O contrutor da classe \mbox{\hyperlink{classput_ellipsoid}{put\+Ellipsoid}} faz a associação das dimensões e cor da elipse. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classput_ellipsoid_a72a1454349cf3253b365bac1d937210c}\label{classput_ellipsoid_a72a1454349cf3253b365bac1d937210c}} 
+{\bfseries $\sim$put\+Ellipsoid} ()
+\begin{DoxyCompactList}\small\item\em O destrutor da classe put\+Ellpsoid informa quando a elipse foi destruida. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classput_ellipsoid_a2512bb38bd20edb1f6ceaaf7186595de}{draw}} (\mbox{\hyperlink{class_sculptor}{Sculptor}} \&s)
+\begin{DoxyCompactList}\small\item\em O método da draw classe \mbox{\hyperlink{classput_ellipsoid}{put\+Ellipsoid}} é responsável por desenhar a elipse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classput_ellipsoid_a15a453848be2e6f4efa0135167fabd91}{xcenter}}
+\begin{DoxyCompactList}\small\item\em A classe \mbox{\hyperlink{classput_sphere}{put\+Sphere}} define a posição e cor do da esfera a ser desenhada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classput_ellipsoid_ac4415779b84fede6fa2348f209def3c0}\label{classput_ellipsoid_ac4415779b84fede6fa2348f209def3c0}} 
+int {\bfseries ycenter}
+\item 
+\mbox{\Hypertarget{classput_ellipsoid_ab342508bfcddf72304446e981b3b740b}\label{classput_ellipsoid_ab342508bfcddf72304446e981b3b740b}} 
+int {\bfseries zcenter}
+\item 
+\mbox{\Hypertarget{classput_ellipsoid_ad1ab67f206e4b3f0b90858f3cd92f033}\label{classput_ellipsoid_ad1ab67f206e4b3f0b90858f3cd92f033}} 
+int {\bfseries rx}
+\item 
+\mbox{\Hypertarget{classput_ellipsoid_a874b7d636d69225b50b81d5885182f3e}\label{classput_ellipsoid_a874b7d636d69225b50b81d5885182f3e}} 
+int {\bfseries ry}
+\item 
+\mbox{\Hypertarget{classput_ellipsoid_ad10e736313ac13b2bac1e04756b672e4}\label{classput_ellipsoid_ad10e736313ac13b2bac1e04756b672e4}} 
+int {\bfseries rz}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{classput_ellipsoid}{put\+Ellipsoid}} serve para esculpir a Elipse. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classput_ellipsoid_a2512bb38bd20edb1f6ceaaf7186595de}\label{classput_ellipsoid_a2512bb38bd20edb1f6ceaaf7186595de}} 
+\index{putEllipsoid@{putEllipsoid}!draw@{draw}}
+\index{draw@{draw}!putEllipsoid@{putEllipsoid}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sculptor}{Sculptor}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+O método da draw classe \mbox{\hyperlink{classput_ellipsoid}{put\+Ellipsoid}} é responsável por desenhar a elipse. 
+
+O método draw recebe um ponteiro do tipo escultor 
+
+Implements \mbox{\hyperlink{class_figura_geometrica}{Figura\+Geometrica}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classput_ellipsoid_a15a453848be2e6f4efa0135167fabd91}\label{classput_ellipsoid_a15a453848be2e6f4efa0135167fabd91}} 
+\index{putEllipsoid@{putEllipsoid}!xcenter@{xcenter}}
+\index{xcenter@{xcenter}!putEllipsoid@{putEllipsoid}}
+\doxysubsubsection{\texorpdfstring{xcenter}{xcenter}}
+{\footnotesize\ttfamily int xcenter\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A classe \mbox{\hyperlink{classput_sphere}{put\+Sphere}} define a posição e cor do da esfera a ser desenhada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xcenter} & é a posição x da esfera \\
+\hline
+{\em ycenter} & é a posição y da esfera \\
+\hline
+{\em zcenter} & é a posição z da esfera \\
+\hline
+{\em rx} & é o raio das esfera no eixo x \\
+\hline
+{\em ry} & é o raio das esfera no eixo y \\
+\hline
+{\em rz} & é o raio das esfera no eixo z \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/dayan/\+Downloads/escultor-\/2/putellipsoid.\+h\item 
+C\+:/\+Users/dayan/\+Downloads/escultor-\/2/putellipsoid.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\hypertarget{class_sculptor}{}\doxysection{Sculptor Class Reference}
+\label{class_sculptor}\index{Sculptor@{Sculptor}}
+
+
+A classe \mbox{\hyperlink{class_sculptor}{Sculptor}} serve para esculpir voxels dentro de uma matriz de 3 dimensões.  
+
+
+
+
+{\ttfamily \#include $<$sculptor.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sculptor_a40fa7e825aa02125f9dfc212d5d75469}{Sculptor}} (int \+\_\+nx, int \+\_\+ny, int \+\_\+nz)
+\begin{DoxyCompactList}\small\item\em O contrutor da classe \mbox{\hyperlink{class_sculptor}{Sculptor}} faz a alocação dinâmica do ponteiro v. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_aa74040089d01e95f863fd817710353b7}\label{class_sculptor_aa74040089d01e95f863fd817710353b7}} 
+{\bfseries $\sim$\+Sculptor} ()
+\begin{DoxyCompactList}\small\item\em O descrutor libera memória que foi alocada para o ponteiro v. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_a4874c19173097c5b066ab3e6888424da}\label{class_sculptor_a4874c19173097c5b066ab3e6888424da}} 
+void {\bfseries set\+Color} (float r, float g, float b, float a)
+\begin{DoxyCompactList}\small\item\em A função set\+Color cadastra a sequência RGB e a tranparência dos voxels. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sculptor_a835dc769dd416dce5328d7c71664dd43}{put\+Voxel}} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em A função \mbox{\hyperlink{classput_voxel}{put\+Voxel}} cadastra o estado de visibilidade do voxel e as coordenadas onde o voxel deve ser contruido. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_ab6d61cc7009714dd32f36a491f6f9709}\label{class_sculptor_ab6d61cc7009714dd32f36a491f6f9709}} 
+void {\bfseries cut\+Voxel} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em A função \mbox{\hyperlink{classcut_voxel}{cut\+Voxel}} deleta os voxel alterando o estado de visibilidade do voxel na posição (x,y,z). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_a365f21a4c5ca2ffd93439c3e22d4a398}\label{class_sculptor_a365f21a4c5ca2ffd93439c3e22d4a398}} 
+int {\bfseries get\+Nx} ()
+\begin{DoxyCompactList}\small\item\em As funções get\+Nx , get\+Ny, get\+Nz retornam as dimenções do Escultor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sculptor_a398f2a14cd4fc16019753b0761214524}\label{class_sculptor_a398f2a14cd4fc16019753b0761214524}} 
+int {\bfseries get\+Ny} ()
+\item 
+\mbox{\Hypertarget{class_sculptor_ac15b5e2d4267eb624422dde71dfd350a}\label{class_sculptor_ac15b5e2d4267eb624422dde71dfd350a}} 
+int {\bfseries get\+Nz} ()
+\item 
+void \mbox{\hyperlink{class_sculptor_a1cc4037d83d679285bc7038a9d1f83a6}{write\+OFF}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em A função write\+OFF cria, escreve/altera, salva e fecha arquivo no formato OFF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{class_sculptor}{Sculptor}} serve para esculpir voxels dentro de uma matriz de 3 dimensões. 
+
+A classe \mbox{\hyperlink{class_sculptor}{Sculptor}} define uma matriz 3D que poderá ser preenchida por voxels, cubos coloridos que podem ser organizados em formas geométricas.
+
+Os voxels da matriz podem ser preenchidos com uma cor, que será definida no código de cores RGB (Red, Green, Blue) e também será informado o nível de transparência da cor selecionada. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sculptor_a40fa7e825aa02125f9dfc212d5d75469}\label{class_sculptor_a40fa7e825aa02125f9dfc212d5d75469}} 
+\index{Sculptor@{Sculptor}!Sculptor@{Sculptor}}
+\index{Sculptor@{Sculptor}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{Sculptor()}{Sculptor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sculptor}{Sculptor}} (\begin{DoxyParamCaption}\item[{int}]{\+\_\+nx,  }\item[{int}]{\+\_\+ny,  }\item[{int}]{\+\_\+nz }\end{DoxyParamCaption})}
+
+
+
+O contrutor da classe \mbox{\hyperlink{class_sculptor}{Sculptor}} faz a alocação dinâmica do ponteiro v. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+nx} & é dimensão em X da matriz (quantos voxels terá no eixo X) \\
+\hline
+{\em \+\_\+ny} & é dimensão em Y da matriz (quantos voxels terá no eixo Y) \\
+\hline
+{\em \+\_\+nz} & é dimensão em Z da matriz (quantos voxels terá no eixo Z) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sculptor_a835dc769dd416dce5328d7c71664dd43}\label{class_sculptor_a835dc769dd416dce5328d7c71664dd43}} 
+\index{Sculptor@{Sculptor}!putVoxel@{putVoxel}}
+\index{putVoxel@{putVoxel}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{putVoxel()}{putVoxel()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classput_voxel}{put\+Voxel}} (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+A função \mbox{\hyperlink{classput_voxel}{put\+Voxel}} cadastra o estado de visibilidade do voxel e as coordenadas onde o voxel deve ser contruido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & é posição X do voxel na matriz \\
+\hline
+{\em y} & é posição Y do voxel na matriz \\
+\hline
+{\em z} & é posição Z do voxel na matriz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_a1cc4037d83d679285bc7038a9d1f83a6}\label{class_sculptor_a1cc4037d83d679285bc7038a9d1f83a6}} 
+\index{Sculptor@{Sculptor}!writeOFF@{writeOFF}}
+\index{writeOFF@{writeOFF}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{writeOFF()}{writeOFF()}}
+{\footnotesize\ttfamily void write\+OFF (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+A função write\+OFF cria, escreve/altera, salva e fecha arquivo no formato OFF. 
+
+O formato de arquivo OFF possibilita vizualizar a forma geométrica em 3D através de softwares como o Mashlab. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & é o nome.\+OFF do arquivo que deve ser criado ou alterado.\\
+\hline
+\end{DoxyParams}
+A função white\+OFF escreve ou atera no arquivo seguindo uma sequencia padrão dos arquivos.\+OFF.
+
+OFF
+
+NVertices NFaces NArestas
+
+x\mbox{[}0\mbox{]} y\mbox{[}0\mbox{]} z\mbox{[}0\mbox{]}
+
+...
+
+x\mbox{[}NVertices-\/1\mbox{]} y\mbox{[}NVertices-\/1\mbox{]} z\mbox{[}NVertices-\/1\mbox{]}
+
+Nv v\mbox{[}0\mbox{]} v\mbox{[}1\mbox{]} ... v\mbox{[}Nv-\/1\mbox{]} r g b a
+
+Nv v\mbox{[}0\mbox{]} v\mbox{[}1\mbox{]} ... v\mbox{[}Nv-\/1\mbox{]} r g b a
+
+...
+
+Nv v\mbox{[}0\mbox{]} v\mbox{[}1\mbox{]} ... v\mbox{[}Nv-\/1\mbox{]} r g b a
+
+Na primeira linha escreve o tipo do arquivo.
+
+Na segunda linha escreve a quantidade (tipo inteiro) de vétices, faces e arestas da forma geométrica.
+
+A partir da terceira linha, escreve as coordenadas no plano 3D de cada vértice da figura.
+
+Logo em seguinda, escreve nas próximas linhas a quantidade de vértices em cada face, as coordenadas dos vértices dessa face e a sequência de cor e transparência da face.
+
+Cada cor é definida por 4 números em ponto flutuante, 3 referentes ao formato RGB e 1 referente à tranparência da cor. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/dayan/\+Downloads/escultor-\/2/sculptor.\+h\item 
+C\+:/\+Users/dayan/\+Downloads/escultor-\/2/sculptor.\+cpp\end{DoxyCompactItemize}
